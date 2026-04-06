@@ -23,6 +23,7 @@ public class UserController {
 	@PostMapping("/user")
 	public User addUser(@RequestBody User user) {
 		return userRepository.saveUser(user);
+		//hhh
 	}
 	
 	@PutMapping("/user")
