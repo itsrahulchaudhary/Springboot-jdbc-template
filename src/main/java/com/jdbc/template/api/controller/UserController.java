@@ -23,6 +23,7 @@ public class UserController {
 	@PostMapping("/user")
 	public User addUser(@RequestBody User user) {
 		System.out.println("master");
+		System.out.println("New Line");
 		return userRepository.saveUser(user);
 		//hhhRRR
 	}
