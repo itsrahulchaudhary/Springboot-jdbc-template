@@ -32,6 +32,7 @@ public class UserController {
 	
 	@PutMapping("/user")
 	public User updateUser(@RequestBody User user) {
+		System.out.println("feature/demo");
 		return userRepository.updateUser(user);
 	}
 	
