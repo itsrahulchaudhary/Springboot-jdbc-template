@@ -24,6 +24,7 @@ public class UserController {
 	public User addUser(@RequestBody User user) {
 		System.out.println("master");
 		System.out.println("New Line");
+		System.out.println("feature");
 		return userRepository.saveUser(user);
 		//hhhRRR
 	}
