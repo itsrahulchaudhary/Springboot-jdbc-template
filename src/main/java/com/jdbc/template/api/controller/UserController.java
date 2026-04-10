@@ -17,6 +17,7 @@ import com.jdbc.template.api.repository.UserRepository;
 @RestController
 public class UserController {
 	
+	
 	@Autowired
 	UserRepository userRepository;
 	
@@ -48,6 +49,7 @@ public class UserController {
 
 	@DeleteMapping("/user/{id}")
 	String deleteUser(@PathVariable("id") int id) {
+		System.out.println("I am from feature/hello branch");
 		return userRepository.deleteUserById(id);	
 	}
 }
