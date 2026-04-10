@@ -50,6 +50,7 @@ public class UserController {
 	@DeleteMapping("/user/{id}")
 	String deleteUser(@PathVariable("id") int id) {
 		System.out.println("I am from feature/hello branch");
+		System.out.println("I am from feature/mytest branch");
 		return userRepository.deleteUserById(id);	
 	}
 }
